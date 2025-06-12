@@ -24,6 +24,7 @@ public class StockController: ControllerBase
     [HttpPatch]
     public IActionResult UpdateStock([FromBody]UpdateStockRequest request, [FromHeader]string token)
     {
+        return null;
         return _stockServices.Update(request, token);
     }
 
